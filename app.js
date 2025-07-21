@@ -23,4 +23,13 @@ function botaoclick(){
 
 
    
-//Ao clicar no botão soma, peça 2 números inteiros e exiba o resultado da soma em um alerta.
+/*function botaoclick () {
+    
+  let numer1 =  prompt ("Ponha o número para somar");
+  let numer2 = prompt (`${numer1} +`);
+  let resultado = (Number(`${numer1}`) + Number(`${numer2}`));
+  alert (`O resultado é ${resultado}`);
+}*/
+
+
+
