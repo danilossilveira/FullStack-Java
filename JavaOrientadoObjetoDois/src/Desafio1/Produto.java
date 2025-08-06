@@ -6,5 +6,6 @@ public class Produto {
         produto.setProduto("Picanha");
         produto.setPreco(1000);
         produto.produtos();
+        produto.aplicarDesconto(20);
     }
 }
