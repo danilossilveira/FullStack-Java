@@ -1,8 +1,23 @@
 package Desafio1;
 
 public class ProdutoFuncao {
+    private String produto;
+    private double preco;
 
+    public void setProduto(String produto) {
+        this.produto = produto;
+    }
+
+    public void setPreco(double preco) {
+        this.preco = preco;
 }
+    public void produtos(){
+        System.out.println(produto);
+        System.out.println(preco);
+    }
+}
+
+
 
 
 

@@ -7,7 +7,7 @@ public class ContaBancaria {
         conta.setSaldo(3000);
         conta.setTitular("Danilo");
 
-        //System.out.println(conta.dadosDaConta());
+        conta.dadosDaConta();
     }
 }
 

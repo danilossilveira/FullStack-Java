@@ -5,7 +5,7 @@ public class IdadePessoa {
         IdadePessoaFuncao idanome = new IdadePessoaFuncao();
         idanome.setNome("Danilo");
         idanome.setIdade(18);
-        //System.out.println(idanome.nomeIdade());
+        idanome.nomeIdade();
     }
 }
 

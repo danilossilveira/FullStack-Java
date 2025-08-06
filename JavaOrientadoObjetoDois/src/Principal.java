@@ -14,6 +14,7 @@ public class Principal {
 //        System.out.println(meuFilme.setSomaDasAvaliacoes());
 //        System.out.println(meuFilme.setTotalDasAvaliacoes());
         System.out.println(meuFilme.somaMedia());
+
     }
 }
 
