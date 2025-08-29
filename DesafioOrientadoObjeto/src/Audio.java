@@ -6,7 +6,7 @@ public class Audio {
     private double classificacao;
     private double totalDasAvaliacoes;
     private double somaDasAvaliacoes;
-    private double somaFinal;
+
 
     public String getTitulo() {
         return titulo;
@@ -64,13 +64,30 @@ public class Audio {
         this.somaDasAvaliacoes = somaDasAvaliacoes;
     }
 
+
+
     public void fichaTecnica(){
         setTitulo("abc");
         setDuracao(1.1);
         setTotalReproducoes(1);
         setCurtidas(1);
-        setClassificacao(1.1);
 
     }
 
+    public void avalia(double nota){
+        somaDasAvaliacoes=somaDasAvaliacoes+=nota;
+        totalDasAvaliacoes++;
+
+    }
+    public double soma(){
+        return somaDasAvaliacoes / totalDasAvaliacoes;
+
+
+    }
 }
+
+
+/*audio.avalia(9);
+        audio.avalia(8);
+        audio.avalia(7);
+        audio.avalia(10);*/
