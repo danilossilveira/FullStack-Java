@@ -6,6 +6,11 @@ public class Serie extends Titulo {
     private int episodioPorTemporada;
     private int minutosPorEpisodio;
 
+    public Serie(String nome, int anoDeLancamento) {
+        super(nome, anoDeLancamento);
+
+    }
+
     public int getMinutosPorEpisodio() {
         return minutosPorEpisodio;
     }
@@ -38,12 +43,14 @@ public class Serie extends Titulo {
         this.temporadas = temporadas;
     }
 
+
+
     @Override
     public int getMinutosDeDuracao() {
         return temporadas * episodioPorTemporada * minutosPorEpisodio;
     }
 
-    @Override
+
     public void fichaTecnica() {
         System.out.println("O nome da série é: "+ getNome());
         System.out.println("O ano de lançamento é: "+ getAnoDeLancamento());
@@ -53,13 +60,4 @@ public class Serie extends Titulo {
 
 
 
-/*Serie minhaSerie = new Serie();
-        minhaSerie.setNome("The Walking Dead");
-        minhaSerie.setAnoDeLancamento(2010);
-        minhaSerie.fichaTecnica();
 
-        minhaSerie.setTemporadas(11);
-        minhaSerie.setEpisodioPorTemporada(15);
-        minhaSerie.setAtiva(true);
-        minhaSerie.setMinutosPorEpisodio(50);
-        System.out.println(minhaSerie.getMinutosDeDuracao() + "minutos");*/
