@@ -44,7 +44,6 @@ public class Serie extends Titulo {
     }
 
 
-
     @Override
     public int getMinutosDeDuracao() {
         return temporadas * episodioPorTemporada * minutosPorEpisodio;
@@ -52,12 +51,17 @@ public class Serie extends Titulo {
 
 
     public void fichaTecnica() {
-        System.out.println("O nome da série é: "+ getNome());
-        System.out.println("O ano de lançamento é: "+ getAnoDeLancamento());
+        System.out.println("O nome da série é: " + getNome());
+        System.out.println("O ano de lançamento é: " + getAnoDeLancamento());
         System.out.println("O filme tem " + getMinutosDeDuracao() + " minutos");
     }
+
+//    @Override
+//    public String toString() {
+//
+//        return "Filme: " + this.getNome() + "(" + this.getAnoDeLancamento() + ")";
+//    }
+
 }
-
-
 
 
