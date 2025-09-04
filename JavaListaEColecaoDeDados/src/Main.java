@@ -6,7 +6,7 @@
 //import java.util.Collection;
 //import java.util.Collections;
 //import java.util.Comparator;
-
+//
 //public class Main {
 //    public static <Arraylist> void main(String[] args) {
 //         Filme meuFilme = new Filme("O rei leão", 1998);
@@ -26,7 +26,7 @@
 //        meuFilme2.avalia(9);
 //        meuFilme2.avalia(10);
 //        System.out.println(meuFilme.somaMedia());
-
+//
 //    var meuFilme3 = new Filme("Rampage", 2017);
 //        meuFilme3.setMinutosDeDuracao(140);
 //        meuFilme3.fichaTecnica();
