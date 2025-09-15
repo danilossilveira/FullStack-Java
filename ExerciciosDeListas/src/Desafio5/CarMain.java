@@ -16,5 +16,7 @@ public class CarMain {
         list.add(car4);
         System.out.println("Temos " + list.size() + " carros na concecionária ");
         System.out.println(list);
+        System.out.println(list.get(2));
     }
+
 }

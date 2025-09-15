@@ -15,6 +15,7 @@ public class ProductMain {
         list.add(product3);
         list.add(product4);
         System.out.println(list);
+        System.out.println("Produto mais caro: " + list.get(0));
 
 
     }

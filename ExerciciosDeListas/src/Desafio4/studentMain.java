@@ -16,7 +16,8 @@ public class studentMain {
         list.add(student4);
         System.out.println("Na sala possui " + list.size() + " alunos");
         System.out.println(list);
-
+        System.out.println(list.get(0));
+        System.out.println(list.get(2));
     }
 }
 

@@ -14,5 +14,6 @@ public class AnimalMain {
         list.add(animal3);
         System.out.println("Neste zoológico tem " + list.size() + " especies de animais");
         System.out.println(list);
+        System.out.println(list.get(0));
     }
 }
