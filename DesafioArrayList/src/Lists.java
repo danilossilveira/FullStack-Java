@@ -18,7 +18,7 @@ public class Lists {
         System.out.println(header);
 
         int choice = 0;
-        while (choice < 4) {
+        while (choice < 4 || choice != 4) {
             choice = scan.nextInt();
             switch (choice) {
                 case 1:
@@ -61,5 +61,3 @@ public class Lists {
         }
     }
 }
-
-
