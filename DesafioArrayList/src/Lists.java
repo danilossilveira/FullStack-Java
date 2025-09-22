@@ -7,34 +7,53 @@ public class Lists {
             
             ==== Menu ====
              1 - Adicionar nome
-              2 - Remover nome
-              3 - Lista de nomes
-               4 - Sair
+             2 - Remover nome
+             3 - Lista de nomes
+             4 - Sair
             """;
     public void Escolhas () {
 
         Scanner scan = new Scanner(System.in);
         ArrayList<String> list = new ArrayList<>();
+
+
         System.out.println(header);
 
         int choice = 0;
-        while (choice < 4 || choice != 4) {
+        while (choice != 4) {
             choice = scan.nextInt();
             switch (choice) {
                 case 1:
                     System.out.println("Qual nome quer adicionar?");
-                    String newUser = scan.next();
-                    list.add(newUser);
-                    System.out.println(newUser + " adicionado");
-                    System.out.println(header);
-                    break;
+                    scan.nextLine();
+                    String newUser = scan.nextLine();
+                    if(list.contains(newUser)){
+                        System.out.println("Esse usuário ja existe");
+                        System.out.println(header);
+                        break;
+                    }
+                    else {
+                        list.add(newUser);
+                        System.out.println(newUser + " adicionado");
+                        System.out.println(header);
+                        break;
+                    }
                 case 2:
                     System.out.println("Qual nome quer remover?");
-                    String removeUser = scan.next();
-                    list.remove(removeUser);
-                    System.out.println(removeUser + " removido");
-                    System.out.println(header);
+                    scan.nextLine();
+                    String removeUser = scan.nextLine();
+                    if(list.contains(removeUser)) {
+                        list.remove(removeUser);
+                        System.out.println(removeUser + " removido");
+                        System.out.println(header);
+                        break;
+                    }
+                    else {
+                        System.out.println(removeUser + " não está na lista");
+                        System.out.println(header);
+
                     break;
+                    }
                 case 3:
                     if(list.size()==0){
                         System.out.println("A lista está vazia.");

@@ -4,3 +4,6 @@ public class Teste extends Lists{
         return super.toString();
     }
 }
+
+
+// 2. Iterar sobre o ArrayList e comparar as strings
