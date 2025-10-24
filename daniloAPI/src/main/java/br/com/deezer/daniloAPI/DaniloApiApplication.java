@@ -28,7 +28,7 @@ public class DaniloApiApplication implements CommandLineRunner {
         while (escolha!=5) {
             System.out.println("""
                     1-Buscar por música ou artista
-                    2-Adicionar música na lista
+                    2-Adicionar música na sua Playlist
                     3-Ver playlist
                     4-Criar uma nova Playlist
                     5-Finalizar""");

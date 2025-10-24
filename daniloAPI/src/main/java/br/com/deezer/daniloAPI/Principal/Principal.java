@@ -47,10 +47,15 @@ public class Principal {
     }
 
     public void PlaylistAdd(List<DadosMusica> list){
-        DadosMusica musica = list.get(0);
-        minhaPlaylist.adicionarMusica(musica);
-        musicasAdicionadas.add(musica);
-        System.out.println(musica + " Adicionada na playlist");
+        if(list.isEmpty()){
+            System.out.println("Você não criou nenhuma Playlist");
+        }
+        else {
+            DadosMusica musica = list.get(0);
+            minhaPlaylist.adicionarMusica(musica);
+            musicasAdicionadas.add(musica);
+            System.out.println(musica + " Adicionada na playlist");
+        }
     }
 
     public void exibirPlaylist() {
