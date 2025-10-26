@@ -56,12 +56,12 @@ public class Principal {
             DadosMusica musica = list.get(0);
             minhaPlaylist.adicionarMusica(musica);
             musicasAdicionadas.add(musica);
-            System.out.println(musica + " Adicionada na playlist");
+            System.out.println(musica + " Adicionada na playlist " + minhaPlaylist.getNome());
         }
     }
 
     public void exibirPlaylist() {
-        System.out.println("Sua playlist:");
+        System.out.println("Sua playlist: " + minhaPlaylist.getNome());
         for (int i = 0; i < musicasAdicionadas.size(); i++) {
             DadosMusica m = musicasAdicionadas.get(i);
             System.out.println((i + 1) + ". " + m.titulo() + " - " +
